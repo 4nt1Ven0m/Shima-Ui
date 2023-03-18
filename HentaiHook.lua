@@ -345,7 +345,7 @@ do
             Max = 2, Current = 0
         }
         --
-        Library.Theme.Logo = Utility.AddImage("Abyss/Assets/UI/Logo2.png", "https://i.imgur.com/Tdct5sD.png")
+        Library.Theme.Logo = Utility.AddImage("Abyss/Assets/UI/Logo2.png", "https://i.imgur.com/2CjweZH.png")
         --
         local WindowOutline = Utility.AddDrawing("Square", {
             Size = WindowSize,
@@ -484,11 +484,13 @@ do
         Library.Theme.Saturation = Utility.AddImage("Abyss/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
         Library.Theme.SaturationCursor = Utility.AddImage("Abyss/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
         --
+        Library.Theme.HentaiHook = Utility.AddImage("Abyss/Assets/UI/Asuka.png", "https://i.imgur.com/2CjweZH.png")
         Library.Theme.Astolfo = Utility.AddImage("Abyss/Assets/UI/Astolfo.png", "https://i.imgur.com/T20cWY9.png")
         Library.Theme.Aiko = Utility.AddImage("Abyss/Assets/UI/Aiko.png", "https://i.imgur.com/1gRIdko.png")
         Library.Theme.Rem = Utility.AddImage("Abyss/Assets/UI/Rem.png", "https://i.imgur.com/ykbRkhJ.png")
         Library.Theme.Violet = Utility.AddImage("Abyss/Assets/UI/Violet.png", "https://i.imgur.com/7B56w4a.png")
         Library.Theme.Asuka = Utility.AddImage("Abyss/Assets/UI/Asuka.png", "https://i.imgur.com/3hwztNM.png")
+   
         --
         Window.SetText(1, "Checking Assets")
         --
@@ -4095,8 +4097,8 @@ do
             
             ClickGUI:Dropdown({
                 Title = "Anime",
-                List = {"Astolfo", "Violet", "Rem", "Aiko", "Asuka"},
-                Default = "Astolfo",
+                List = {"HentaiHook", "Astolfo", "Violet", "Rem", "Aiko", "Asuka"},
+                Default = "HentaiHook",
                 Callback = function(Name)
                     Window.ChangeAnime(Name)
                 end
